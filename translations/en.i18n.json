@@ -1,6 +1,4 @@
-{
-  "title" : "Form translate example",
-  
+{ 
   "main_title" : "Meteor multilang example using tap-i18n package!",
   
   "form" : {
