@@ -1,0 +1,13 @@
+{
+  "title" : "Form translate example",
+  
+  "main_title" : "Meteor multilang example using tap-i18n package!",
+  
+  "form" : {
+    "name" : "Name",
+    "phone" : "Phone",
+    "email" : "e-mail",
+    "signup" : "Submit"
+  },
+  "form_entry" : "Form entry"
+}
