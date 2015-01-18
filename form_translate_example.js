@@ -11,7 +11,7 @@ Mesosphere({
         name: {
             required: true,
             format: 'alphanumeric',
-            message: 'Please enter a valid name'
+            message: FrontLang.get("form.error.name")
         },
         phone: {
             required: true,
@@ -20,12 +20,12 @@ Mesosphere({
                 minLength: 2,
                 maxLength: 30,
             },
-            message: "Phone must be between 2 and 30 numbers"
+            message: FrontLang.get("form.error.phone")
         },
         email: {
             required: true,
             format: 'email',
-            message: "Invalid e-mail"
+            message: FrontLang.get("form.error.email")
         }
     }
 
