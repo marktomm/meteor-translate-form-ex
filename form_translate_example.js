@@ -1,5 +1,6 @@
 Forms = new Meteor.Collection('forms');
 
+
 /*
   Mesosphere and server method should both run in shared space for dual client/server
   validation to work.
@@ -11,7 +12,7 @@ Mesosphere({
         name: {
             required: true,
             format: 'alphanumeric',
-            message: 'Please enter a valid name'
+            message: i18n('form.error.name')
         },
         phone: {
             required: true,
@@ -20,16 +21,17 @@ Mesosphere({
                 minLength: 2,
                 maxLength: 30,
             },
-            message: "Phone must be between 2 and 30 numbers"
+            message: i18n('form.error.phone')
         },
         email: {
             required: true,
             format: 'email',
-            message: "Invalid e-mail"
+            message: i18n('form.error.email')
         }
     }
 
 });
+
 
 Meteor.methods({
   signupUser: function (rawData) {
