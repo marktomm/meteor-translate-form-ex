@@ -3,11 +3,11 @@
 </head>
 
 <body>
-  <h1>Meteor multilang example using i18n package!</h1>
+  <h1>{{trans "mainTitle"}}</h1>
   {{> langNav}}
   {{> exampleForm}}
   {{#each getFormEntriesFromDb}}
-    <h2>Form Entry</h2>
+    <h2>{{trans "formEntry"}}</h2>
     {{> formEntry}}
   {{/each}}
 </body>
@@ -15,25 +15,25 @@
 <template name="exampleForm">
 	<form name="signupForm" id="signup-form" class="panel" action="#">
 	  <div class="form-group">
-	    <label for="name">Name</label>
+	    <label for="name">{{trans "form.name"}}</label>
 	    <input type="text" name="name" id="name" class="form-control" />
 	    <span id='name-error'></span>
 	  </div>
 
 	  <div class="form-group">
-	    <label for="phone">Phone Number</label>
+	    <label for="phone">{{trans "form.phone"}}</label>
 	    <input type="phone" name="phone" id="phone" class="form-control" />
         <span id='phone-error'></span>
 	  </div>
       
       <div class="form-group">
-        <label for="email">E-mail</label>
+        <label for="email">{{trans "form.email"}}</label>
 	    <input type="email" name="email" id="email" class="form-control" />
         <span id='email-error'></span>
 	  </div>
 
 	  <div class="form-group">
-	    <input type="submit" value="Sign Up" id="create-account" class="btn btn-success pull-right">
+	    <input type="submit" value={{trans "form.signup"}} id="create-account" class="btn btn-success pull-right">
 	  </div>
 	</form>
 </template>

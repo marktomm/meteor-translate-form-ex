@@ -2,7 +2,10 @@ form:
   name: "Nimi"
   phone: "Telefoni number"
   email: "E-post"
+  signup: "Edasi"
   error:
     name: "Sisestage korrektne nimi"
     phone: "Telefoni number peab olema 2 ja 30 margi vahel"
     email: "Vale e-osti aadresss"
+mainTitle: "Eesti keelne naide"
+formEntry: "Sissekanne"

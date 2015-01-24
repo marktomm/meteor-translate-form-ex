@@ -2,7 +2,10 @@ form:
   name: "Name"
   phone: "Phone Number"
   email: "E-mail"
+  signup: "Sign up"
   error:
     name: "Please enter a valid name"
     phone: "Phone must be between 2 and 30 numbers"
     email: "Invalid e-mail"
+mainTitle: "Meteor multilang example using i18n package!"
+formEntry: "Form Entry"
