@@ -12,5 +12,5 @@ Everything translates OK, but get console warnings when translating
 form messages:
 
 Translation of 'form.error.phone' requested outside of a reactive context!
-## anit-i18n-package: anti:i28n package
+## anit-i18n-package: anti:i18n package
 
